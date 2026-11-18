@@ -1,0 +1,21 @@
+{
+    "##": "Windows11 轻松设置 —— 一键完成 Win11 常用设置、优化与清理。",
+    "version": "1.1.2",
+    "description": "Windows11轻松设置: Win11 常用系统设置、优化、垃圾清理与组件管理小工具",
+    "homepage": "https://github.com/lhj1618GitHub/win-set",
+    "license": "Freeware",
+    "url": "https://github.com/lhj1618GitHub/win-set/releases/download/1.1.2/Windows11-set-1.1.2.zip",
+    "hash": "6080ce604b1b0237c78324a98a2baff4268092d822ae770e8d5273f2807bf54f",
+    "shortcuts": [
+        [
+            "Windows11轻松设置.exe",
+            "Windows11轻松设置"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/lhj1618GitHub/win-set"
+    },
+    "autoupdate": {
+        "url": "https://github.com/lhj1618GitHub/win-set/releases/download/$version/Windows11-set-$version.zip"
+    }
+}
