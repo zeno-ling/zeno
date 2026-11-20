@@ -1,0 +1,46 @@
+{
+    "##": "NEO Emacs —— 用 Rust 重写的 GPU 加速 Emacs，兼容 Elisp 与既有生态。",
+    "version": "0.0.20",
+    "description": "NEO Emacs (WIP): GPU powered Emacs written in Rust, modern display engine, multi-threaded Elisp, 10x performance, zero-pause GC and 100% Emacs compatibility.",
+    "homepage": "https://neomacs.com",
+    "license": "GPL-3.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/eval-exec/neomacs/releases/download/v0.0.20/neomacs-0.0.20-x86_64-pc-windows-msvc.zip",
+            "hash": "4f201df75ebcab6ea6d98e07544b485db6e77e0282c755885a352822b8bd0297",
+            "extract_dir": "neomacs-0.0.20-x86_64-pc-windows-msvc"
+        },
+        "arm64": {
+            "url": "https://github.com/eval-exec/neomacs/releases/download/v0.0.20/neomacs-0.0.20-aarch64-pc-windows-msvc.zip",
+            "hash": "2034dcfc59737ee3092f6a225e523b395de840589942f4d2d61299e53342024d",
+            "extract_dir": "neomacs-0.0.20-aarch64-pc-windows-msvc"
+        }
+    },
+    "bin": [
+        "neomacs.exe",
+        "neomacsclient.exe",
+        "runneomacs.exe",
+        "cmdproxy.exe"
+    ],
+    "shortcuts": [
+        [
+            "runneomacs.exe",
+            "NEO Emacs"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/eval-exec/neomacs"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/eval-exec/neomacs/releases/download/v$version/neomacs-$version-x86_64-pc-windows-msvc.zip",
+                "extract_dir": "neomacs-$version-x86_64-pc-windows-msvc"
+            },
+            "arm64": {
+                "url": "https://github.com/eval-exec/neomacs/releases/download/v$version/neomacs-$version-aarch64-pc-windows-msvc.zip",
+                "extract_dir": "neomacs-$version-aarch64-pc-windows-msvc"
+            }
+        }
+    }
+}
