@@ -7,7 +7,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/zeno-ling/micro-rs/releases/download/v0.1.3/micro-rs-0.1.3-windows-x64.zip",
-            "hash": "0b73c65dc97310b564abe8425745b45c4577b2a2ab3d708188a7601b3faa514f"
+            "hash": "f8c66f2a86c8aa0d4266d7a146df864c6942f10f01c76e9c353f031ee90f4339"
         }
     },
     "bin": "micro-rs.exe",
