@@ -1,0 +1,36 @@
+{
+    "##": "WinRust —— 用 Rust 写的 Windows shell 替代：任务栏、文件管理器、NTFS 搜索、任务管理器、磁盘清理。",
+    "version": "0.5.8",
+    "description": "Windows shell replacement in Rust: taskbar, file manager, NTFS search, task manager, disk cleaner. One installer exe.",
+    "homepage": "https://github.com/Lemxy/WinRust",
+    "license": {
+        "identifier": "MIT|Apache-2.0"
+    },
+    "url": "https://v6.gh-proxy.org/https://github.com/Lemxy/WinRust/releases/download/v0.5.8/WinRust.exe",
+    "##url": "顶层 url 硬编码版本号：本机 UrlReplace 插件会剥掉 gh-proxy 前缀但不展开 $version，只有 autoupdate 里的 $version 才生效。",
+    "hash": "71956dee41e9dffea4fb0a6dca06f73d60803c864e2c0dc2552f1227e142e5de",
+    "bin": [
+        [
+            "WinRust.exe",
+            "WinRust"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "WinRust.exe",
+            "WinRust"
+        ]
+    ],
+    "notes": [
+        "WinRust.exe 是图形安装向导，装插件需要管理员权限。",
+        "它会关闭 Windows 搜索、隐藏原生任务栏，可选把 Explorer 从 shell 换掉。",
+        "卸载：再运行一次 WinRust.exe，点第一页的 Remove WinRust。",
+        "命令行（管理员）：WinRust.exe install all --yes / list / uninstall <plugin> / rollback --yes"
+    ],
+    "checkver": {
+        "github": "https://github.com/Lemxy/WinRust"
+    },
+    "autoupdate": {
+        "url": "https://v6.gh-proxy.org/https://github.com/Lemxy/WinRust/releases/download/v$version/WinRust.exe"
+    }
+}
