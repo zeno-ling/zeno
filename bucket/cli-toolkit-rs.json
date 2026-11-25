@@ -1,0 +1,24 @@
+{
+    "##": "cli-toolkit-rs —— Rust 单二进制 multicall 工具箱（uutils 风格）：15 个内置 applet + nu 透传，一个 exe 顶 16 个命令。",
+    "version": "1.0.0",
+    "description": "Rust multicall CLI toolkit: hash/fg/fgr/fcd/dupes/big/disk/ps/json/yaml/replace/bench/tree + nu passthrough (single binary, uutils-style argv[0] dispatch)",
+    "homepage": "https://github.com/zeno-ling/cli-toolkit-rs",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://v6.gh-proxy.org/https://raw.githubusercontent.com/zeno-ling/cli-toolkit-rs/main/cli-toolkit-rs/cli-toolkit-rs-1.0.0.zip",
+            "hash": "73fb405dc2d7576a1d2d63d525ee3e536ecfe33773d9a097c07798266372a3c9"
+        }
+    },
+    "bin": "cli-toolkit-rs/cli-toolkit.exe",
+    "checkver": {
+        "github": "https://github.com/zeno-ling/cli-toolkit-rs"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://v6.gh-proxy.org/https://raw.githubusercontent.com/zeno-ling/cli-toolkit-rs/main/cli-toolkit-rs/cli-toolkit-rs-$version.zip"
+            }
+        }
+    }
+}

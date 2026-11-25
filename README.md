@@ -15,9 +15,11 @@ scoop bucket add zeno https://github.com/zeno-ling/zeno
 | `win-set` | [Windows11轻松设置](https://github.com/lhj1618GitHub/win-set) — Win11 常用系统设置、优化、垃圾清理与组件管理 |
 | `neomacs` | [NEO Emacs](https://github.com/eval-exec/neomacs) — 用 Rust 重写的 GPU 加速 Emacs，兼容 Elisp 与既有生态 |
 | `micro-rs` | [micro-rs](https://github.com/zeno-ling/micro-rs) — 用 Rust 重写的终端文本编辑器，参照 micro，支持语法高亮/多光标/分屏/插件钩子 |
+| `cli-toolkit-rs` | [cli-toolkit-rs](https://github.com/zeno-ling/cli-toolkit-rs) — Rust 单二进制 multicall 工具箱，15 个内置 applet + nu 透传（hash/fg/fgr/fcd/dupes/big/disk/ps/json/yaml/replace/bench/tree 等） |
 
 ```powershell
 scoop install zeno/win-set
 scoop install zeno/neomacs
 scoop install zeno/micro-rs
+scoop install zeno/cli-toolkit-rs
 ```
