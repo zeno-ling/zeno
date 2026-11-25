@@ -1,0 +1,24 @@
+{
+    "##": "micro-rs —— 用 Rust 重写的终端文本编辑器，操作手感参照 micro，支持语法高亮/多光标/分屏/插件钩子。",
+    "version": "0.1.1",
+    "description": "A modern terminal text editor written in Rust, inspired by micro (syntax highlighting, multiple cursors, splits, Rhai plugin hooks).",
+    "homepage": "https://github.com/zeno-ling/micro-rs",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zeno-ling/micro-rs/releases/download/v0.1.1/micro-rs-0.1.1-windows-x64.zip",
+            "hash": "579a5515b597b54bb64273d2d47ee99171c0a8d2561b24d0f634a3a573077ba6"
+        }
+    },
+    "bin": "micro-rs.exe",
+    "checkver": {
+        "github": "https://github.com/zeno-ling/micro-rs"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zeno-ling/micro-rs/releases/download/v$version/micro-rs-$version-windows-x64.zip"
+            }
+        }
+    }
+}
