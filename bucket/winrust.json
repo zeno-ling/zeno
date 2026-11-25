@@ -6,8 +6,7 @@
     "license": {
         "identifier": "MIT|Apache-2.0"
     },
-    "url": "https://v6.gh-proxy.org/https://github.com/Lemxy/WinRust/releases/download/v0.5.8/WinRust.exe",
-    "##url": "顶层 url 硬编码版本号：本机 UrlReplace 插件会剥掉 gh-proxy 前缀但不展开 $version，只有 autoupdate 里的 $version 才生效。",
+    "url": "https://github.com/Lemxy/WinRust/releases/download/v0.5.8/WinRust.exe",
     "hash": "71956dee41e9dffea4fb0a6dca06f73d60803c864e2c0dc2552f1227e142e5de",
     "bin": [
         [
@@ -31,6 +30,6 @@
         "github": "https://github.com/Lemxy/WinRust"
     },
     "autoupdate": {
-        "url": "https://v6.gh-proxy.org/https://github.com/Lemxy/WinRust/releases/download/v$version/WinRust.exe"
+        "url": "https://github.com/Lemxy/WinRust/releases/download/v$version/WinRust.exe"
     }
 }
